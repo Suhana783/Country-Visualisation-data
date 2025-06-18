@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Countries Data</title>
+  
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome for graph icon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+
+<body>
+    <nav class="navbar">
+  <h1> World Countries Data</h1>
+  <p id="country-count"> Currently, we have 250 countries</p>
+  <p id="result-msg"> </p>
+   </nav>
+  <!-- Search bar -->
+
+  <input type="text" id="search" placeholder="Search by name, capital or language" />
+ 
+  
+
+  <!-- Buttons group -->
+  <div class="button-group">
+    <button id="sort-name">NAME</button>
+    <button id="sort-capital">CAPITAL</button>
+    <button id="sort-population">POPULATION</button>
+    <a href="#graph" class="icon-button">
+      <i class="fa-solid fa-chart-simple"></i>
+    </a>
+  </div>
+
+  <!-- Countries Grid -->
+  <div id="countries-container"></div>
+
+  <!-- Placeholder for Graph Section -->
+  <div id="graph">
+    <h2>Graph Section</h2>
+  </div>
+
+  <!-- Script files -->
+  <script src="countries.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
